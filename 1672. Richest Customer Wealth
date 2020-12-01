@@ -1,0 +1,12 @@
+# My solution - Time Complexity - O(n^2), space complexity - O(1)
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        d=0
+        for i in range(len(accounts)):
+            c=0
+            #d=0
+            for j in accounts[i]:
+                c+=j
+                if c>=d:
+                    d=c
+        return d  
