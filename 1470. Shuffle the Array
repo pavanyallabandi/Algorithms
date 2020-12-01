@@ -1,0 +1,10 @@
+#my T=O(N) S=O(n)
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        l=[]
+        a=nums[:n]
+        b=nums[n:]
+        for i in range(n):
+            l.append(a[i])
+            l.append(b[i])
+        return l    
